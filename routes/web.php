@@ -8,3 +8,6 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/dados', [App\Http\Controllers\UserTesteController::class, 'index'])->name('users.index');
+
